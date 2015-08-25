@@ -16,17 +16,18 @@
 
             <div id="left" class="subContainer greyBox">
 
-                <h4><h:outputText value="#{UserNumberBean.response}"/></h4>
+               
+                <h4><h:outputText escape="false" value="#{UserNumberBean.response}"/></h4>
 
-                <form action="index.xhtml">
+              <!--  <form action="index.xhtml">
 
                     <input type="submit" id="backButton" value="Back"/>
 
-                </form>
+                </form>-->
 
-                <h:form>
+              <h:form  prependId="false">
 
-                    <h:commandButton id="backButton" value="Back" action="index" />
+                    <h:commandButton id="backButton" value="Atras" action="index" />
 
                 </h:form>
 
